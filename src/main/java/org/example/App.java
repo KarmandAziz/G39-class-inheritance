@@ -40,15 +40,17 @@ public class App
                 "SS23",
                 "Suzuki",
                 2009,
+                "Minivan",
                 "20 km/h",
                 "650 KG",
                 "20 km");
 
 
-        System.out.println(car);
-        System.out.println(motorcycle);
-        System.out.println(truck);
+      car.drive();
+      motorcycle.drive();
+      truck.drive();
 
+      System.out.println();
 
 
     }

@@ -15,6 +15,8 @@ public abstract class Vehicle {
         setYear(year);
     }
     public abstract void drive();
+
+
     @Override
     public String toString(){
         return "Vehicle ID: " + vehicleId +"\n" +

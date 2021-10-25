@@ -2,18 +2,22 @@ package org.example.exercises;
 
 public class Truck extends Vehicle{
 
-    private String maxSpeed = "30 Km/h";
-    private String maxWeight = "5000 KG";
-    private String maxRange = "450 KM";
+
+    private String truckType;
+    private String maxSpeed;
+    private String maxWeight;
+    private String maxRange;
 
 
     public Truck(int vehicleID,
                  String regNum,
                  String brand, int year,
+                 String truckType,
                  String maxSpeed,
                  String maxWeight,
                  String maxRange) {
         super(vehicleID, regNum, brand, year);
+        setTruckType(truckType);
         setMaxRange(maxRange);
         setMaxWeight(maxWeight);
         setMaxSpeed(maxSpeed);
@@ -21,7 +25,21 @@ public class Truck extends Vehicle{
 
     @Override
     public void drive() {
-        System.out.println("Truck is driving...");
+        System.out.println(getTruckType() +" is driving...");
+    }
+    @Override
+    public String toString(){
+        return "Max speed: " + maxSpeed + "\n"+
+                "Max weight: " + maxWeight + "\n"+
+                "Max range: " + maxRange;
+    }
+
+    public String getTruckType() {
+        return truckType;
+    }
+
+    public void setTruckType(String truckType) {
+        this.truckType = truckType;
     }
 
     public String getMaxSpeed() {

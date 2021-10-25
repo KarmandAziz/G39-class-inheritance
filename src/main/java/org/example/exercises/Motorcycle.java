@@ -15,13 +15,19 @@ public class Motorcycle extends Vehicle{
 
     @Override
     public void drive() {
-        System.out.println("Motorcycle is driving..");
+        System.out.println(getMotorcycleType() +" Motorcycle is driving..");
     }
+
 
     public String getMotorcycleType() {
         return motorcycleType;
     }
-
+    @Override
+    public String toString(){
+        return "Motorcycle type: " + motorcycleType +"\n"+
+                "Max Speed: " + maxSpeed + "\n"+
+                "Motor size: " + motorSize;
+    }
     public void setMotorcycleType(String motorcycleType) {
         this.motorcycleType = motorcycleType;
     }
