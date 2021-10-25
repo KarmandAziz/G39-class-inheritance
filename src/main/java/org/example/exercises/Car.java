@@ -14,6 +14,10 @@ public class Car extends Vehicle{
         setColour(colour);
     }
 
+    @Override
+    public void drive() {
+        System.out.println("Car is driving, brum brum..");
+    }
 
     public int getNumOfDoors() {
         return numOfDoors;

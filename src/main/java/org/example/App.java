@@ -1,5 +1,9 @@
 package org.example;
 
+import org.example.exercises.Car;
+import org.example.exercises.Motorcycle;
+import org.example.exercises.Truck;
+import org.example.exercises.Vehicle;
 import org.example.model.Animal;
 import org.example.model.Dog;
 
@@ -14,7 +18,36 @@ public class App
     public static void main( String[] args )
     {
 
+        Vehicle car = new Car(1,
+                "GEM06Z",
+                "Seat",
+                2020,
+                4,
+                4,
+                "Red");
 
+        Vehicle motorcycle = new Motorcycle(
+                1,
+                "USY185",
+                "Toyota",
+                2015,
+                "Standard",
+                "210 Km/h",
+                3.0);
+
+        Vehicle truck = new Truck(
+                1,
+                "SS23",
+                "Suzuki",
+                2009,
+                "20 km/h",
+                "650 KG",
+                "20 km");
+
+
+        System.out.println(car);
+        System.out.println(motorcycle);
+        System.out.println(truck);
 
 
 

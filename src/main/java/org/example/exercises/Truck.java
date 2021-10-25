@@ -19,6 +19,10 @@ public class Truck extends Vehicle{
         setMaxSpeed(maxSpeed);
     }
 
+    @Override
+    public void drive() {
+        System.out.println("Truck is driving...");
+    }
 
     public String getMaxSpeed() {
         return maxSpeed;

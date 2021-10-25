@@ -13,6 +13,10 @@ public class Motorcycle extends Vehicle{
         setMotorSize(motorSize);
     }
 
+    @Override
+    public void drive() {
+        System.out.println("Motorcycle is driving..");
+    }
 
     public String getMotorcycleType() {
         return motorcycleType;
