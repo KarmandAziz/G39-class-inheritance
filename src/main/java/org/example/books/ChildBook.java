@@ -8,7 +8,7 @@ public class ChildBook extends Book implements Loanable {
 
 
     public ChildBook(String title, String author, Category Category, int year, int pages, String description, String difficulty, String ageGroup) {
-        super(title, author, Category, year, pages);
+        super(title, author, Category.CHILD, year, pages);
         this.description = description;
         this.difficulty = difficulty;
         this.ageGroup = ageGroup;
