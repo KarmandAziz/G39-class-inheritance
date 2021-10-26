@@ -40,6 +40,7 @@ public class ChildBook extends Book implements Loanable {
 
     @Override
     public void loan() {
+        System.out.println("Don't forget to return it in time!");
 
     }
 }
