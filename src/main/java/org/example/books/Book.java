@@ -4,24 +4,30 @@ public class Book {
 
     private String title;
     private String author;
-    private String category;
     private int year;
     private int pages;
+    public Category category;
+    public enum Category {
+        CHILD, ADULT, NOT_LOANABLE
+    }
 
 
     public Book() {
         pages = 100;
     }
 
-    public Book(String title, String author, String category, int year, int pages) {
+
+    public Book(String title, String author,Category Category, int year, int pages) {
         setTitle(title);
         setAuthor(author);
-        setCategory(category);
+        category = Category;
         setYear(year);
         setPages(pages);
     }
 
-
+    public Category getCategory(){
+        return category;
+    }
 
 
     public String getTitle() {
@@ -38,14 +44,6 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
     }
 
     public int getYear() {

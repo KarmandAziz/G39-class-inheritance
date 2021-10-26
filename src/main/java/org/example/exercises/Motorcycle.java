@@ -15,7 +15,7 @@ public class Motorcycle extends Vehicle{
 
     @Override
     public void drive() {
-        System.out.println(getMotorcycleType() +" Motorcycle is driving..");
+        System.out.println(getMotorcycleType() +" Motorcycle is going!!..");
     }
 
 
